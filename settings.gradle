@@ -1,1 +1,3 @@
 rootProject.name = 'react-spring-boot-1'
+
+include 'client'

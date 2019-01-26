@@ -1,0 +1,12 @@
+task dev(type: Exec) {
+    commandLine(
+            "cmd", "/c",
+            "npx", "babel",
+            "--watch", "src",
+            "--out-dir", "../build/resources/main/static/js",  // for hot reload
+            "--presets", "react-app/prod",
+            "--source-maps", "inline",  // these do not get generated while babel is watching...!
+//            "--out-dir", "../src/main/resources/static/js",  // for source code
+//            "--presets", "react-app/prod"
+    )
+}
